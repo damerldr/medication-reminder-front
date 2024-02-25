@@ -1,0 +1,26 @@
+<!-- login.component.html -->
+<div class="background-container">
+    <div class="login-container">
+        <form class="login-form" (ngSubmit)="login(username.value, password.value)">
+            <h2>Login</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required #username>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required #password>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <div class="register-link">
+            <p>Don't have an account? <a href="http://localhost:4200/register">Register here</a></p>
+        </div>
+        <div class="social-media">
+            <p>Connect with us:</p>
+            <a href="#"><img src="https://img.icons8.com/?size=96&id=118497&format=png" alt="Facebook"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=96&id=13963&format=png" alt="Twitter"></a>
+            <a href="#"><img src="https://img.icons8.com/?size=96&id=32323&format=png" alt="Instagram"></a>
+        </div>
+    </div>
+</div>

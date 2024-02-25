@@ -1,0 +1,25 @@
+<!-- register.component.html -->
+
+<div class="register-container">
+    <form class="register-form" (ngSubmit)="register(username.value, email.value, password.value, confirmPassword.value)">
+      <h2 text-align="center">Register</h2>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required #username>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required #email>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required #password>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required #confirmPassword>
+      </div>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+  

@@ -1,0 +1,15 @@
+<!-- medication-list.component.html -->
+
+<div *ngIf="medications.length > 0; else noMedications">
+    <h2>Medication List</h2>
+    <ul>
+      <li *ngFor="let medication of medications">
+        {{ medication.name }} - Dosage: {{ medication.dosage }} - Frequency: {{ medication.frequency }}
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noMedications>
+    <p>No medications available.</p>
+  </ng-template>
+  
